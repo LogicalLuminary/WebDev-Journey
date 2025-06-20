@@ -1,0 +1,4 @@
+inline -> take the space only req .exp => span a
+block -> takes whole block. exp=> para,div. the next thing will come in next line
+
+whoever they can be customised.

@@ -1,0 +1,14 @@
+Core Web Vitals are a set of key performance metrics by Google that measure real-world user experience on websites. The three main metrics are:
+
+LCP (Largest Contentful Paint) – Measures loading performance. Aim: LCP < 2.5s
+
+FID (First Input Delay) – Measures interactivity. Aim: FID < 100ms
+(Replaced by INP - Interaction to Next Paint in 2024)
+
+CLS (Cumulative Layout Shift) – Measures visual stability. Aim: CLS < 0.1
+
+These vitals help ensure your website is fast, responsive, and stable for users.
+
+SEO -> search engine optimisation 
+Goto inspect -> lighthouse , there we can evaluate the website
+
