@@ -1,0 +1,4 @@
+Id is a unique identification for a particular html element
+
+Class is a group in which it blongs( regular class of oops)
+but here calss doesnt define a particlar structure n fucntion instead is just a group.
