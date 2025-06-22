@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* element selectors(all divs)*/
+        div{
+            background-color: aqua;
+        }
+        .c1{
+            background-color: blue;
+        }
+        /* Id selector  */
+        #id1{
+            background-color: forestgreen;
+        }
+        /* direct Child selector */
+        div>p{
+            background-color: yellowgreen;
+        }
+        /* Descendent selector */
+        div p{
+            bottom: 0;
+            /* all including not direct childs of div */
+        }
+        /* for All  */
+        *{
+            margin: 0;
+        }
+
+        /* Pseudo selector - after visiting color change*/
+        a:visited{
+            color: rgb(29, 238, 39);
+            background-color: red;
+        }
+        a:link{
+
+        }
+        a:active{
+            /* cursor on clickable range over it */
+        }
+        div:hover{
+            /* on hovering over it */
+        }
+        p:first-child{
+            /* java p 1t child ho, vaha  */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="c1">I am a div</div>
+    <div>What about u ?</div>
+    <div id="id1">I am another div .
+        <p>Heres a para inside div - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit assumenda consectetur, culpa nam sapiente et iure animi, cupiditate voluptas molestias ipsum vero voluptates quis tenetur non consequatur. Eius nisi eum eveniet adipisci dolorum mollitia iste dolore totam ipsum quae ut explicabo optio quo molestias maiores, alias accusamus eaque iusto odio!</p>
+    </div>
+    <a href="https://google.com"> visit Google</a>
+</body>
+</html>

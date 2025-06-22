@@ -1,0 +1,3 @@
+inline css -> by style attribute
+internal css -> style tag
+external css -> by making a .css file 

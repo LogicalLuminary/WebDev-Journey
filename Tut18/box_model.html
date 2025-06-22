@@ -1,0 +1,36 @@
+<!-- Content -> padding ->border -> margin  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: blue;
+        }
+
+        .box2 {
+            color: #ebff15;
+            padding: 100px;
+            border: 20px solid brown;
+            margin: 50px;
+            box-sizing: border-box;
+            /* means content+padding == border */
+        }
+
+        /* If marings of 2 obj touch, the max of them of margin is taken. not m1+m2*/
+        .box1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- one obj is from 2 classes box and box 1  -->
+    <div class="box box1"> I am a box</div>
+    <div class="box box2"> I am a box2</div>
+</body>
+
+</html>
