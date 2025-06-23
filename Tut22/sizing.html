@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            border: 5px solid black;
+            width: 250px;
+            height :10vw;
+            background-color : aqua; 
+        /* the pixel is not good, coz some devices heigher px some less  */
+            margin:auto;
+            min-height: 50vw; 
+            /* means itni ti hogi hi, aur content aya to badh jayegi */
+        }
+        .container{
+            border: 5px solid black;
+            width: 80vw;
+            height :50vw;
+            background-color : aqua; 
+            font-size: 28px;
+        /* the pixel is not good, coz some devices heigher px some less  */
+            margin:auto;
+        }
+        .container p{
+            /* font-size: 2em; */
+            /* means jo inheret hoke automatic milne wala tha uska 2 time */
+            font-size: 2rem;
+            /* if multiple inheritancew done, it means 2 times of root(here html is root) */
+            width:80%; 
+            /* 80% of parent */
+        }
+    </style>
+</head>
+<body>
+    <div class ="box">
+        This is box
+    </div>
+    <div class ="container">
+        This is a container
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, dolorum.
+        </p>
+    </div>
+</body>
+</html>
