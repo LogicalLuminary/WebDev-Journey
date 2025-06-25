@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* global variable */
+            /* --color:blue; */
+            --seccolor:lightblue;
+            --defpad :25px;
+        }
+        div :first-child{
+            /* default(if var not present) is given brown */
+            background-color: var(--color,brown);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul{
+            /* display :flex; */
+        }
+        ul li {
+            /* local variable */
+            --color : pink;
+            list-style: none;
+            padding: var(--defpad);
+            background-color: var(--color);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class ="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos nam veritatis non eius ab! Iusto quaerat sapiente id itaque blanditiis voluptas possimus sint earum corrupti quia delectus ducimus rerum, ut accusamus neque aliquid ad? Atque a maiores, doloribus dolore debitis nam vero velit hic.
+    </div>
+</body>
+</html>

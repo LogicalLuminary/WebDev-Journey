@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(235, 52, 144);
+        }
+        @media only screen and (max-width :300px){
+            body{
+                background-color: blueviolet;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            body{
+                background-color: rgb(20, 1, 20);
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        .b{
+            width: 344px;
+            height:344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin:3px;
+        }
+    </style>
+</head>
+<body>
+    i am a body 
+    <div class="boxes">
+        <div class ="b"></div>
+        <div class ="b"></div>
+        <div class ="b"></div>
+    </div>
+</body>
+</html>
