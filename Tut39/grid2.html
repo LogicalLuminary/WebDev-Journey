@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:80vw;
+            border: 2px solid rgb(0, 0, 0);
+            height: 50vw;
+            display: grid;
+            grid-template-areas: "nav nav nav" "side article article";
+            justify-items: center;
+            align-items: center;
+        }
+        .class{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+            
+        }
+        .item4{
+            grid-area: nav;
+        }
+        .item1{
+            grid-area: side;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class item1">1</div>
+        <div class="class">2</div>
+        <div class="class item1">3</div>
+        <div class="class item4">4</div>
+        <div class="class">5</div>
+    </div>
+</body>
+</html>

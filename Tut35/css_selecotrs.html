@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            background-color: aqua;
+        }
+
+        .boxes *,p,span{
+            color: blue;
+            border: 2px solid black;
+        }
+        [data-color ="primary"]{
+            padding-top: 45px;
+        }
+        .box:nth-child(even){
+            background-color: blueviolet;
+        }
+        .boxes::before{
+            content:"Hello i am inserted by css";
+        }
+        ::selection{
+            /* when selection text this will happen */
+            background-color: black;
+            color: azure;
+        }
+        input::placeholder{
+            color:pink;
+            font-size:2em;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div data-color="primary" class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type ur name">
+    </div>
+</body>
+</html>
