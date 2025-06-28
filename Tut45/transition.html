@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height: 70vh;
+            width:70vw;
+        }
+        .box{
+            color: aliceblue;
+            background-color: blue;
+            height: 10vw;
+            width:10vw;
+            /* transition-property:transform background-color ;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            transition: all 3s ease-in-out 1s;
+            
+        }
+        .move{
+            transform: translateX(20vw) translateY(10vh);
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box move">
+            I am box
+        </div>
+    </div>
+</body>
+</html>

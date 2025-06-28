@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(188, 117, 255);
+            font-family:'Dancing Script', cursive ;
+        }
+
+        nav {
+            z-index: 10;
+            position: sticky;
+            top: 0;
+            background-color: blueviolet;
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-content: flex-end;
+            justify-content: space-between;
+            /* key change */
+            align-items: end;
+            /* center items vertically */
+            padding: 10px 20px;
+        }
+
+        .button-select {
+            background-color: azure;
+            border-radius: 9px;
+            margin: 2px;
+            padding: 5px 0px;
+        }
+
+        .logo button {
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+    
+        .menu {
+            display: flex;
+            gap: 5px;
+        }
+
+        .content {
+            margin: 10%;
+            padding: 5px;
+            height: 50vh;
+            background-color: rgb(73, 23, 106);
+            border: 5px solid azure;
+            border-radius: 20px;
+            color: aliceblue;
+            font-size: 2em;
+            align-content: center;
+            text-align: center;
+            /* width: 100vw; */
+        }
+        .blocks {
+            display:grid;
+            margin :10%;
+            grid-template-columns: 25vw 25vw 25vw;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap:20px;
+        }
+        .box {
+            z-index: 2;
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid purple;
+            border-radius: 10px;
+            background-color: rgb(219, 181, 255);
+            height: 20vh;
+            width: 20vw;
+            text-align: center;
+
+
+        }
+        
+        @media screen and (orientation: portrait) {
+            .blocks{
+
+                display: grid;
+                margin :10%;
+                grid-template-columns: 90vw;
+                grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
+
+            }
+        .box {
+            color: purple;
+            z-index: 2;
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid purple;
+            border-radius: 30px;
+            background-color: rgb(219, 181, 255);
+            height: 20vh;
+            width: 70vw;
+            text-align: center;
+
+        }
+    }
+    span{
+        display: inline-block;
+        position: relative;
+
+        margin: 10%;
+        padding: 5px;
+        color: azure;
+        background-color: rgb(249, 147, 237);
+        border: 5px solid azure;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+
+
+
+<body>
+    <nav>
+        <div class="logo">
+            <button>💻</button>
+            <a href="file:///C:/Users/asus/OneDrive/Desktop/CODE/WEB_DEV/Tut41-project/nav_bar.html">SiteName</a>
+        </div>
+        <div class="menu">
+            <div class="icon">
+                <select class="button-select">
+                    <option value="" disabled selected>Price</option>
+                    <option value="one">Option One</option>
+                </select>
+            </div>
+            <div class="icon">
+                <select class="button-select">
+                    <option value="" disabled selected>Resources</option>
+                    <option value="one">Option One</option>
+                </select>
+            </div>
+            <div class="icon">
+                <select class="button-select">
+                    <option value="" disabled selected>Explore</option>
+                    <option value="one">Option One</option>
+                </select>
+            </div>
+            <div class="icon">
+                <select class="button-select">
+                    <option value="" disabled selected>About us</option>
+                    <option value="one">Option One</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolores adipisci maxime illum debitis qui iusto
+    </div>
+    <div class="blocks">
+        <div class="box">
+            <h2>Heading</h2>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+            </span>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+
+            </span>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+            </span>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+
+            </span>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+            </span>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+
+            </span>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+            </span>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+
+            </span>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+            </span>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+
+            </span>
+        </div>
+        <div class="box">
+            <h2>Heading</h2>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+            </span>
+            <span>
+                <a href="C:\Users\asus\OneDrive\Desktop\CODE\WEB_DEV\Tut44-project\using_grid.html">Link1 </a>
+
+            </span>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
