@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(72, 234, 234);
+            height: 80vh;
+            width: 540px;
+        }
+        .box{
+            background-color: blue;
+            width: 40px;
+            height: 40px;
+            animation: mera_animation;
+            /* animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-delay: 2s;
+            animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+
+            /* animation: mera_animation 2s cubic-bezier(0.165, 0.84, 0.44, 1) 1s 7 alternate forwards,
+                        a2 2s ease 1.5s 7 ; */
+        }
+@keyframes combined_animation {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        background-color: blue;
+    }
+    100% {
+        transform: translateX(500px) rotate(360deg);
+        background-color: rgb(255, 8, 255);
+    }
+}
+
+.box {
+    animation: combined_animation 3s cubic-bezier(0.165, 0.84, 0.44, 1) 1s 7 alternate forwards;
+}
+
+
+/* 
+        @keyframes mera_animation{
+            from{
+
+            }
+            to{
+                background-color: rgb(255, 8, 255);
+            }
+        }
+        @keyframes a2 {
+            
+            
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: translateX(500px);
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
