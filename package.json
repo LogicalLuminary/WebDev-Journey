@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/LogicalLuminary/WebDev-Journey#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "slugify": "^1.6.6"
   }
 }
