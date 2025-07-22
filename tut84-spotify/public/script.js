@@ -1,8 +1,8 @@
 console.log("Yo.. JS")
 
 async function main(){
-    let a= await fetch ("C:/Users/asus/OneDrive/Desktop/CODE/WEB_DEV/tut84-spotify/public/songs/")
-    let response = await a.blob();
+    let a= await fetch ("http://localhost:3000/songs/")
+    let response = await a.text();
     console.log(response);
 }
 
